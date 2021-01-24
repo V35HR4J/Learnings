@@ -9,16 +9,16 @@ function GuessGame(){
         guess=prompt('Guess any number from 1-10');
         console.log(`Guess=${guess} Ans=${ans}`);
         if(guess<ans){
-            alert(`You Guessed Too Low! and You have ${5-chance} chances left`);
+            alert(`You Guessed Too Low! and You have ${3-chance} chances left`);
         }
         else if(guess>ans){
-            alert(`You Guessed Too High and You have ${5-chance} chances left`);
+            alert(`You Guessed Too High and You have ${3-chance} chances left`);
         }
         else if(guess==ans){
             alert(`Congrats You Won it ${user}!!`);
         }
         
-       if(chance>=5){
+       if(chance>=3){
             alert(`You Loosed it, You are out of chances, The answer was ${ans}`);
             break;
         }
